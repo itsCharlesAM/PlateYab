@@ -2,9 +2,8 @@ import flet as ft
 import asyncio  # For handling the delay
 import data  # Import the data from data.py
 
+
 # Function to find the city based on the entered number
-
-
 def get_city_by_plate_number(plate_number):
     plate_number_str = str(plate_number)  # Convert number to string for lookup
     for province, cities in data.plate_data.items():
@@ -13,9 +12,8 @@ def get_city_by_plate_number(plate_number):
                 return f"{province}، {city}"
     return "منطقه نامشخص"
 
+
 # Function that runs when the button is clicked
-
-
 def on_search(e):
     try:
         # Get the entered number and convert it to an integer
@@ -30,17 +28,14 @@ def on_search(e):
     # Update the result text to show the city name
     result_text.update()
 
+
 # Function to restrict the input to 2 digits only
-
-
 def on_input_change(e):
     if len(e.control.value) > 2:
         e.control.value = e.control.value[:2]  # Limit to 2 characters
     if not e.control.value.isdigit():  # Ensure the input is only digits
         e.control.value = ''.join([i for i in e.control.value if i.isdigit()])
     e.control.update()
-
-# Main app function
 
 
 # Main app function
