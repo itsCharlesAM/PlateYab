@@ -3,6 +3,8 @@
 
 **PlateYab** is a simple app built with [Flet](https://flet.dev/) that helps users identify the region of Iranian license plates based on the two-digit number. The app features a splash screen, a user-friendly interface, and supports Persian (Farsi) text.
 
+[Download PlateYab APK](https://github.com/itsCharlesAM/PlateYab/releases/download/v1.0.0/PlateYab.apk)
+
 ## Features
 
 - Splash screen with fade-in and fade-out effects.
